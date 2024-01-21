@@ -22,3 +22,9 @@ Command explanation:
 - `-W` for using password
 - `-a` for print the query to stdout
 - `-f` for select sql file
+
+## SQL Task
+1. Run this command to get snapshot from table
+```sh
+psql -1 -U user -d employee -h localhost -W -a -f ./sql/snapshot.sql
+```
