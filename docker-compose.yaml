@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:16.1
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: employee
+    ports:
+      - 5432:5432
+    volumes:
+      - sql_data:/var/lib/postgresql/data
+
+volumes:
+  sql_data:
