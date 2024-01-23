@@ -28,3 +28,10 @@ Command explanation:
 ```sh
 psql -1 -U user -d employee -h localhost -W -a -f ./sql/snapshot.sql
 ```
+
+## Python Task
+1. Run this command to calculate and save data to db
+```sh
+python3 main.py --start-date 2019-01-01 --database employee
+```
+Note: `start-date` params can be used as parameter for daily pipeline
